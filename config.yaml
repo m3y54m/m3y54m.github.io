@@ -1,4 +1,21 @@
 baseURL: https://m3y54m.github.io
-languageCode: en-us
-title: Meysam Parvizi
+title: میثم پرویزی
 theme: PaperMod
+
+paginate: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+googleAnalytics: "UA-83536422-2"
+
+defaultContentLanguage: fa
+languages:
+  fa:
+    languagedirection: rtl
+    languageName: فارسی
+    weight: 1
+  en:
+    languageName: English
+    title: Meysam Parvizi
+    weight: 2
