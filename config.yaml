@@ -19,3 +19,81 @@ languages:
     languageName: English
     title: Meysam Parvizi
     weight: 2
+    params:
+      DateFormat: "Monday, January 2, 2006"
+      description: "Hardware Design Engineer and Embedded Systems Developer"
+
+      profileMode:
+          title: "Meysam Parvizi"
+          imageTitle: "Meysam Parvizi"
+          buttons:
+              - name: Posts
+                url: posts
+
+      homeInfoParams:
+          Title: "Meysam Parvizi"
+          Content: "Hardware Design Engineer and Embedded Systems Developer"
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی"
+  images: "images/mp_logo.png"
+  DateFormat: "Monday، 2 January 2006"
+
+  label:
+    text: " "
+    icon: "images/mp_logo.png"
+    iconHeight: 25
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  showtoc: true
+  tocopen: true
+  comments: true
+
+  profileMode:
+    enabled: false
+    title: میثم پرویزی
+    imageUrl: "images/mp_logo.png"
+    imageTitle: میثم پرویزی
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: نوشته‌ها
+        url: posts
+  homeInfoParams:
+    Title: "میثم پرویزی"
+    Content: "طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی"
+  socialIcons:
+    - name: github
+      url: "https://github.com/m3y54m"
+    - name: linkedin
+      url: "https://ir.linkedin.com/in/meysamparvizi"
+    - name: instagram
+      url: "https://instagram.com/meysam.parvizi"
+    - name: twitter
+      url: "https://twitter.com/m3y54m"
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai
