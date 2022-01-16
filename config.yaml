@@ -13,14 +13,32 @@ defaultContentLanguage: fa
 languages:
   fa:
     languagedirection: rtl
-    languageName: فارسی
+    languageName: ":iran:"
+    languageAltTitle: فارسی
     weight: 1
+    menu:
+      main:
+        - name: خانه
+          url: /
+          weight: 2
+        - name: نوشته‌ها
+          url: posts/
+          weight: 1
   en:
-    languageName: English
+    languageName: ":uk:"
+    languageAltTitle: English
     title: Meysam Parvizi
     weight: 2
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 2
+        - name: Posts
+          url: posts/
+          weight: 1
+
     params:
-      DateFormat: "Monday, January 2, 2006"
       description: "Hardware Design Engineer and Embedded Systems Developer"
 
       profileMode:
@@ -38,12 +56,11 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی"
   images: "images/mp_logo.png"
-  DateFormat: "Monday، 2 January 2006"
 
   label:
     text: " "
     icon: "images/mp_logo.png"
-    iconHeight: 25
+    iconHeight: 20
 
   defaultTheme: auto
   # disableThemeToggle: true

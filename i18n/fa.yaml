@@ -1,0 +1,47 @@
+- id: prev_page
+  translation: "صفحه قبلی"
+
+- id: next_page
+  translation: "صفحه بعدی"
+
+- id: read_time
+  translation: "خواندن در {{ .Count }} دقیقه"
+
+- id: now
+  translation: "الآن"
+
+- id: seconds_ago
+  translation: "{{ .Count }} ثانیه پیش"
+
+- id: minutes_ago
+  translation: "{{ .Count }} دقیقه پیش"
+
+- id: hours_ago
+  translation: "{{ .Count }} ساعت پیش"
+
+- id: days_ago
+  translation: "{{ .Count }} روز پیش"
+
+- id: months_ago
+  translation: "{{ .Count }} ماه پیش"
+
+- id: years_ago
+  translation: "{{ .Count }} سال پیش"
+
+- id: toc
+  translation: "فهرست مطالب"
+
+- id: translations
+  translation: "ترجمه‌ها"
+
+- id: home
+  translation: "خانه"
+
+- id: edit_post
+  translation: "ویرایش"
+
+- id: code_copy
+  translation: "کپی"
+
+- id: code_copied
+  translation: "کپی شد!"
