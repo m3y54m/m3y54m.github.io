@@ -34,23 +34,20 @@ languages:
         - name: Home
           url: /
           weight: 2
-        - name: Posts
-          url: posts/
-          weight: 1
 
     params:
       description: "Hardware Design Engineer and Embedded Systems Developer"
 
       profileMode:
-          title: "Meysam Parvizi"
-          imageTitle: "Meysam Parvizi"
-          buttons:
-              - name: Posts
-                url: posts
+        enabled: true
+        title: "Meysam Parvizi"
+        subtitle: "Hardware Design Engineer and Embedded Systems Developer"
+        imageUrl: "images/mp_logo.png"
+        imageTitle: "Meysam Parvizi"
 
       homeInfoParams:
-          Title: "Meysam Parvizi"
-          Content: "Hardware Design Engineer and Embedded Systems Developer"
+        Title: "Meysam Parvizi"
+        Content: "Hardware Design Engineer and Embedded Systems Developer"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -59,7 +56,7 @@ params:
 
   label:
     text: " "
-    icon: "images/mp_logo.png"
+    icon: "favicon-32x32.png"
     iconHeight: 20
 
   defaultTheme: auto
@@ -68,7 +65,7 @@ params:
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   showtoc: true
@@ -76,8 +73,9 @@ params:
   comments: true
 
   profileMode:
-    enabled: false
+    enabled: true
     title: میثم پرویزی
+    subtitle: طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی
     imageUrl: "images/mp_logo.png"
     imageTitle: میثم پرویزی
     # imageWidth: 120
@@ -99,9 +97,7 @@ params:
       url: "https://twitter.com/m3y54m"
 
 taxonomies:
-  category: categories
   tag: tags
-  series: series
 
 markup:
   goldmark:
@@ -113,4 +109,4 @@ markup:
     guessSyntax: true
     lineNos: true
     # noClasses: false
-    style: monokai
+    style: dracula

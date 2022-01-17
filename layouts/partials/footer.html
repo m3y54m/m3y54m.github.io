@@ -1,10 +1,28 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
+    {{ if eq .Site.Language.LanguageName ":iran:" }}
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    <span>تمامی حقوق برای <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a> محفوظ است.</span>
     {{- end }}
+    <span>
+        قدرت گرفته از
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> و
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    {{ else }}
+    {{- if .Site.Copyright }}
+    <span>{{ .Site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>. All rights reserved.</span>
+    {{- end }}
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    {{ end }}
 </footer>
 {{- end }}
 
