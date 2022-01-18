@@ -45,3 +45,12 @@
 
 - id: code_copied
   translation: "!کپی شد"
+
+- id: archive
+  translation: "بایگانی"
+
+- id: posts
+  translation: "نوشته‌ها"
+
+- id: tags
+  translation: "کلیدواژه‌ها"

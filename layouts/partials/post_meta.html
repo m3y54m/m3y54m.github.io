@@ -1,5 +1,17 @@
 {{- $scratch := newScratch }}
 
+
+{{- if or .Params.author .Site.Params.author }}
+{{- $author := (.Params.author | default .Site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+    {{- $scratch.Add "meta" (slice (delimit $author ", " )) }}
+{{- else }}
+    {{- $scratch.Add "meta" (slice $author) }}
+{{- end }}
+{{- end -}}
+
+
 {{- if not .Date.IsZero -}}
 
 
@@ -46,10 +58,6 @@
 
 {{- if (.Param "ShowReadingTime") -}}
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
-{{- end }}
-
-{{- with (partial "author.html" .) }}
-{{- $scratch.Add "meta" (slice .) }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}

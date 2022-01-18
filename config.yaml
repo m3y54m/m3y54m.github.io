@@ -20,6 +20,9 @@ languages:
       main:
         - name: خانه
           url: /
+          weight: 3
+        - name: کلیدواژه‌ها
+          url: tags/
           weight: 2
         - name: نوشته‌ها
           url: posts/
@@ -52,7 +55,8 @@ languages:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی"
-  images: "images/mp_logo.png"
+  images: ["images/mp_logo.png"]
+  author: "میثم پرویزی"
 
   label:
     text: " "
@@ -70,7 +74,7 @@ params:
   ShowCodeCopyButtons: true
   showtoc: true
   tocopen: true
-  comments: true
+  comments: false
 
   profileMode:
     enabled: true
@@ -78,10 +82,10 @@ params:
     subtitle: طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی
     imageUrl: "images/mp_logo.png"
     imageTitle: میثم پرویزی
-    # imageWidth: 120
-    # imageHeight: 120
+    imageWidth: 150
+    imageHeight: 150
     buttons:
-      - name: نوشته‌ها
+      - name: "نوشته‌های من"
         url: posts
   homeInfoParams:
     Title: "میثم پرویزی"
@@ -98,6 +102,7 @@ params:
 
 taxonomies:
   tag: tags
+  
 
 markup:
   goldmark:
@@ -110,3 +115,27 @@ markup:
     lineNos: true
     # noClasses: false
     style: dracula
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
