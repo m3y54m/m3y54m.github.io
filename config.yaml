@@ -82,8 +82,8 @@ params:
     subtitle: طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی
     imageUrl: "images/mp_logo.png"
     imageTitle: میثم پرویزی
-    imageWidth: 150
-    imageHeight: 150
+    imageWidth: 160
+    imageHeight: 160
     buttons:
       - name: "نوشته‌های من"
         url: posts
