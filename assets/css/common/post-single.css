@@ -262,7 +262,7 @@
 }
 
 .dark .toc {
-    background: var(--entry);
+    background: var(--code-bg);
 }
 
 .toc details summary {
