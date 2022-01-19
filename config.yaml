@@ -79,7 +79,7 @@ params:
   profileMode:
     enabled: true
     title: میثم پرویزی
-    subtitle: طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی
+    subtitle: "طراح سخت‌افزار و برنامه‌نویس سیستم‌های الکترونیکی"
     imageUrl: "images/mp_logo.png"
     imageTitle: میثم پرویزی
     imageWidth: 160
